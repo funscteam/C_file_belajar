@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+ int main () {
+     double nilaiakhir;
+     bool validinput = false;
+     
+     
+     do {
+         cout << "Masukan nilai akhir anda :";
+         cin >> nilaiakhir;
+         
+         if (nilaiakhir >= 0 && nilaiakhir <= 100) {
+             validinput = true;
+         } else {
+             cout << "Nilai tidak valid. Silahkan coba lagi" << endl;
+         }
+     } while (!validinput);
+     
+     if (nilaiakhir >= 80) {
+         cout << "Selamat, anda lulus!" << endl;
+     } else {
+         cout << "Maaf, anda tidak lulus, silahkan coba lagi" << endl;
+     }
+     
+     
+     return 0;
+ }
