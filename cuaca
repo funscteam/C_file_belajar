@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main () {
+    char cuaca;
+    
+    cout << "Masuka kondisi cuaca (C = cerah, H = hujan , A = mendung):";
+    cin >> cuaca;
+    
+    if (cuaca == 'C' || cuaca == 'c') {
+        cout << "Cuaca cerah, pastikan membawa payung !!" << endl;
+    } else if (cuaca == 'H' || cuaca == 'h') {
+        cout << "Hujan, jangan lupa membawa payung!!" << endl;
+    } else if (cuaca == 'A' || cuaca == 'a') {
+        cout << "Cuaca mendung, tetap siap-siap dengan cuaca tidak pasti" << endl;
+    } else {
+        cout << "Masukan kondisi cuaca tidak valid " << endl;
+    }
+    
+    
+    
+    
+    return 0;
+}
