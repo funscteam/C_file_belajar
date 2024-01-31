@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main () {
+    char jeniskelamin;
+    bool validinput = false;
+    
+    
+    do {
+        cout << "Masukan jenis kelamin (L/P): ";
+        cin >> jeniskelamin;
+        
+        switch (jeniskelamin) {
+            
+            case 'L':
+            case 'l':
+                cout << "Anda adalah seorang laki-laki" << endl;
+                validinput = true;
+                break;
+            case 'P':
+            case 'p':
+                cout << "Anda adalah seorang perempuan." << endl;
+                validinput = true;
+                break;
+            default:
+                cout << "Masukan tidak valid. silahkan coba lagi!!" << endl;
+        }
+    } while (!validinput);
+    
+    
+    return 0;
+}
