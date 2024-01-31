@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main () {
+    
+    char pilihan;
+    double suhucelcius, suhufarenheit;
+    
+    do {
+        cout << "Konversi suhu :\n" ;
+        cout << "A. Celcius ke farenheit\n";
+        cout << "B. Farenheit ke celcius\n";
+        cout << "Pilihan (A/B): ";
+        cin >> pilihan;
+        
+        
+        switch (pilihan) {
+            case 'A':
+            case 'a':
+                cout << "Masukan suhu celscius :";
+                cin >> suhucelcius;
+                suhufarenheit = (suhucelcius * 9 / 5) + 32;
+                cout << "Suhu Farenheit " << suhufarenheit << " F" << endl;
+                break;
+            case 'B':
+            case 'b':
+                cout << "Masukan suhu Farenheit :";
+                cin >> suhufarenheit;
+                suhucelcius = (suhufarenheit - 32) * 5 / 9 ;
+                cout << "Suhu Celsius :" << suhucelcius << " C" << endl;
+                break;
+            default:
+                cout << "Pilihan tidak valid. Silahkan coba lagi." << endl;
+        }
+    } while (pilihan != 'A' && pilihan != 'a' && pilihan != 'B' && pilihan != 'b' );
+    return 0;
+}
