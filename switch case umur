@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main () {
+    int usia;
+    bool validinput = false;
+    
+    
+    do { 
+        cout << "Masukan usia anda : ";
+        cin >> usia;
+        
+        if (usia >= 0 && usia <120) {
+            validinput = true;
+        } else {
+            cout << "Usia tidak valid. silahkan coba lagi." << endl;
+        } 
+    }while (!validinput);
+    
+    switch (usia) { 
+        case 0:
+        case 1:
+        case 2:
+            cout << "Anda masih balita." << endl;
+            break;
+        case 3:
+        case 4:
+        case 5:
+            cout << "Anda sudah menjadi anak anak " << endl;
+            break;
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            cout << "anda adalah seorang remaja." << endl;
+            break;
+        default:
+            cout << "Anda sudah dewasa." << endl;
+    }
+                return 0;
+}
