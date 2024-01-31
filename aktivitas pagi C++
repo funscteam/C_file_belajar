@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+ int main () {
+     int jam;
+     
+     cout << "Masukan jam sekarang (format 24 jam ) :";
+     cin >> jam ;
+     
+     
+     if (jam >= 5 && jam <12) {
+         cout << "Selamat pagi! waktunya sarapan dan beraktifitas" << endl;
+     } else {
+         cout << "Saat ini bukan waktu pagi." << endl;
+     }
+     
+     
+     return 0;
+     
+ }
