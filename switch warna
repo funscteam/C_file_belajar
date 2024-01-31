@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main  () {
+    char warna;
+    bool validinput = false;
+    
+    do {
+        cout << "Masukan warna kendaraan (M = Merah, B = biru, H = hitam ) :";
+        cin >> warna;
+        
+        switch (warna) {
+            case 'M':
+            case 'm':
+                cout << "Warna kendaraan anda adalah merah " << endl;
+                validinput = true;
+                break;
+            case 'B':
+            case 'b':
+                cout << "Warna kendaraan anda adalah biru " << endl;
+                validinput = true;
+                break;
+            case 'H':
+            case 'h':
+                cout << "Warna kendaraan adalah hitam" << endl;
+                validinput = true;
+                break;
+            default :
+                cout << "Masukan tidak valid. silahkan coba lagi" << endl;
+        }
+    } while (!validinput);
+    
+    return 0;
+}
