@@ -1,0 +1,11 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main () {
+    double x = 2.3, y = 3.5;
+    
+    cout << "pangkat :" << pow(x, y) << endl;
+    cout << "Logaritma :" << log(x) << endl;
+    
+    return 0;
+}
