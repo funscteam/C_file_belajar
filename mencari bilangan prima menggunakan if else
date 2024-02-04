@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+ int main () {
+     
+     
+     for (int i = 1; i <= 8; i++) {
+         if ((i & 1) && (i & 2)) {
+             cout << "Iterasi ke-" << i << ": ganjil dan bilangan prima" << endl;
+         } else {
+             cout << "Iterasi ke-" << i << ": genap atau bukan bilangan prima" << endl;
+     }
+}
+return 0;
+}
