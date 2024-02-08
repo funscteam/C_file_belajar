@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+string getdayName (int day) {
+    switch (day) {
+        case 1: return "monday";
+        case 2: return "Tuesday";
+        case 3: return "Wenesday";
+        case 4: return "Thursday";
+        case 5: return "Friday";
+        case 6: return "Saturday";
+        case 7: return "Sunday";
+        default: return "Invalid day";
+    }
+    
+}
+
+int main () {
+    
+    int dayNum = 3;
+    cout << "Day of the week:" << getdayName(dayNum) << endl;
+    return 0;
+}
