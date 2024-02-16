@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main () {
+    int angka = 9876548, jumlahdigit = 0;
+    
+    while(angka != 0) {
+        angka /= 10;
+        ++jumlahdigit;
+    }
+    
+    cout << "JUmlah digit : " << jumlahdigit << endl;
+    return 0;
+}
