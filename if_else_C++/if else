@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    char chooseAnotherColor = 'y';
+
+    while (chooseAnotherColor == 'y' || chooseAnotherColor == 'Y') {
+        cout << "DAFTAR WARNA PAKAIAN" << endl;
+        cout << "---------------------" << endl;
+
+        string nama, jenis, ukuran;
+        cout << "NAMA   : ";
+        getline(cin, nama);
+        cout << "JENIS  : ";
+        getline(cin, jenis);
+        cout << "UKURAN : ";
+        getline(cin, ukuran);
+
+        cout << "---------------------" << endl;
+        int pilihan;
+        cout << "1. MERAH" << endl;
+        cout << "2. BIRU" << endl;
+        cout << "3. HIJAU" << endl;
+        cout << "4. KUNING" << endl;
+        cout << "5. PUTIH" << endl;
+        cout << "Pilihan anda: ";
+        cin >> pilihan;
+
+        switch (pilihan) {
+            case 1:
+                cout << "Anda memilih PAKAIAN MERAH" << endl;
+                break;
+            case 2:
+                cout << "Anda memilih PAKAIAN BIRU" << endl;
+                break;
+            case 3:
+                cout << "Anda memilih PAKAIAN HIJAU" << endl;
+                break;
+            case 4:
+                cout << "Anda memilih PAKAIAN KUNING" << endl;
+                break;
+            case 5:
+                cout << "Anda memilih PAKAIAN PUTIH" << endl;
+                break;
+            default:
+                cout << "Anda salah pilih" << endl;
+                cout << "WARNA yang anda pilih tidak tersedia" << endl;
+                break;
+        }
+
+        cout << "Apakah Anda ingin memilih warna lain? (y/t): ";
+        cin >> chooseAnotherColor;
+        cin.ignore();
+    }
+
+    cout << "Terimakasih atas kunjungan anda DI TOKO PAKAIAN" << endl;
+
+    return 0;
+}
